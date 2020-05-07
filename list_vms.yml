@@ -1,5 +1,8 @@
 - hosts: all
   tasks:
+    - name: get python version
+      shell: python --version
+
     - name: list virt VMs
       virt:
         command: list_vms
