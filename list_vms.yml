@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+    - name: list virt VMs
+      virt:
+        command: list_vms
+      register: all_vms
